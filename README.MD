@@ -56,11 +56,11 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
     Crea un archivo `.env` en la raíz del proyecto con la siguiente configuración:
 
     ```env
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_NAME=miloia
-    REDIS_ADDR=localhost:6379
-    JWT_SECRET=mySuperSecretKey
+    DB_HOST
+    DB_PORT
+    DB_NAME
+    REDIS_ADDR
+    JWT_SECRET
     ```
 
 5. **Compila y ejecuta la aplicación:**
