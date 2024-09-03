@@ -6,7 +6,7 @@ import (
     "github.com/gorilla/mux"
 )
 
-func RegisterChatRoutes(r *mux.Router, hub *chat.Hub) {
+func ChatRoutes(r *mux.Router, hub *chat.Hub) {
     r.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
         chat.HandleConnection(hub, w, r)
     })

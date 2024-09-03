@@ -8,7 +8,7 @@ type Message struct {
     gorm.Model
     Content   string `gorm:"type:text;not null"`
     UserID    uint   `gorm:"not null"`
-    User      User   `gorm:"foreignKey:UserID"`
+    User      RegisterUser   `gorm:"foreignKey:UserID"`
     RoomID    string `gorm:"not null"`
 }
 

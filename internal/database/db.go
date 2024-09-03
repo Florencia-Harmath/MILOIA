@@ -31,5 +31,13 @@ func ConnectDatabase(cfg config.Config) error {
 }
 
 func Migrate(db *gorm.DB) error {
-    return db.AutoMigrate(&models.User{}, &models.Message{})
+    return db.AutoMigrate(&models.RegisterUser{}, &models.Message{})
+}
+
+func SetupExtension() error {
+    err := DB.Exec(`CREATE EXTENSION IF NOT EXISTS "uuid-ossp";`).Error
+    if err != nil {
+        return err
+    }
+    return nil
 }

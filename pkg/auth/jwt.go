@@ -8,6 +8,11 @@ import (
 
 var secretKey string
 
+type ContextKey string
+
+const UserIDKey ContextKey = "userID" // Cambiado a mayúscula para que sea exportado
+
+
 func InitJWT(cfg config.Config) {
     secretKey = cfg.JWTSecret
 }
