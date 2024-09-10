@@ -106,7 +106,5 @@ El proyecto tiene la siguiente estructura:
 3. Realiza tus cambios y asegúrate de que el código esté bien probado.
 4. Envía un pull request detallando los cambios que realizaste.
 
-## Licencia
 
-Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
